@@ -1,0 +1,72 @@
+<div class="row map">
+  <p class="container">
+    <strong>
+      I like representing data on maps and here is a map showing the places
+      I worked. Click on the markers on map to learn more.
+    </strong>
+  </p>
+  <div class="col-md-6">
+    <agm-map [latitude]="lat"
+             [backgroundColor] = "color"
+             [styles]= "styles"
+             [zoom]="zoom"
+             [longitude]="lng">
+      <agm-marker *ngFor = "let employer of employerDetails"
+                  [latitude]="employer.lat"
+                  [longitude]="employer.long"
+                  [markerClickable]="true"
+                  (markerClick)="clicked(employer)">
+        <!--<agm-snazzy-info-window-->
+          <!--[backgroundColor]="colorOfInfoWindow"-->
+          <!--[placement]="placementOfInfoWindow"-->
+          <!--[closeOnMapClick]="true"-->
+          <!--[maxHeight]="50"-->
+          <!--[maxWidth]="50"-->
+          <!--[fontSize]="fontSizeOfInfoWindow"-->
+          <!--[closeWhenOthersOpen]="true" >-->
+          <!--<ng-template>-->
+              <!--{{ employer.employer }}-->
+          <!--</ng-template>-->
+        <!--</agm-snazzy-info-window>-->
+      </agm-marker>
+    </agm-map>
+  </div>
+  <div class="col-md-6">
+    <div id="accordion" role="tablist">
+      <div class="card" *ngFor="let employer of employerDetails;let i = index">
+        <div class="card-header" role="tab" [attr.id]="'headingOne'+i">
+          <h5 class="mb-0">
+            <a data-toggle="collapse" [attr.href]="'#'+i"
+               aria-expanded="true"
+               (click)="clickedAccordianToHighlightOnMap(employer)"
+               [attr.aria-controls]="i">
+              {{ employer.employer }} <span id="durationOfEmployer">{{ employer.duration }}</span>
+            </a>
+          </h5>
+        </div>
+
+        <div [attr.id]="i"
+             [ngClass]="{'show': clickedAccordian === employer.employer}"
+             class="collapse"
+             role="tabpanel"
+             [attr.aria-labelledby]="'headingOne'+i"
+             data-parent="#accordion">
+          <div class="card-body">
+            {{ employer.description }}
+          </div>
+
+          <div id="technology">
+            <ul class="nav nav-pills">
+              <li class="nav-item" *ngFor="let technology of employer.technologies">
+                <a class="nav-link active" href="#">{{technology}}</a> &nbsp;
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

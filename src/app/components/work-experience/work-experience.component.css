@@ -1,0 +1,18 @@
+agm-map{
+  height: 80vh;
+}
+.nav-pills .nav-link{
+  background-color: black;
+  border-radius: 2rem !important;
+}
+a{
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+#durationOfEmployer{
+  float: right;
+}
+p{
+  font-size: 18px;
+}
