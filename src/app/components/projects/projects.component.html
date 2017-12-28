@@ -1,3 +1,15 @@
-<p>
-  projects works!
-</p>
+<div class="jumbotron">
+  <h3>Below is a list of all the Repositories on my GitHub
+    account retrieved from GitHub API </h3>
+</div>
+
+<div class="row">
+  <div class="col-md-4" *ngFor="let repo of gitHubData">
+    <div class="git" (click)="clickedRepo(repo)">
+      <h4>{{repo.name}}</h4>
+      <p>{{repo.description}}</p>
+      <a [href]="repo.html_url">View on GitHub</a>
+    </div>
+    <br>
+  </div>
+</div>

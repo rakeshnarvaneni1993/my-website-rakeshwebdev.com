@@ -14,6 +14,9 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { WorkExperienceComponent } from './components/work-experience/work-experience.component';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {HttpModule} from "@angular/http";
+import {GithubService} from "./services/github.service";
 
 @NgModule({
   declarations: [
@@ -29,12 +32,14 @@ import { WorkExperienceComponent } from './components/work-experience/work-exper
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
+    HttpModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyAu8WN38SsCvopdVuuRGYXpRIrhzNVlK2Q'
     }),
-    AgmSnazzyInfoWindowModule
+    AgmSnazzyInfoWindowModule,
   ],
-  providers: [],
+  providers: [GithubService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
