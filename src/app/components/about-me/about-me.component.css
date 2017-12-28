@@ -4,3 +4,6 @@
 h3{
   text-align: center;
 }
+:host{
+  font-family: 'Roboto Mono', monospace;
+}

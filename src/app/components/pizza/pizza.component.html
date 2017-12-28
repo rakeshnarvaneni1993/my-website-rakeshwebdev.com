@@ -1,46 +1,50 @@
-<a [routerLink] = "['/work-experience']">
-  <img src="./../assets/pizza/4.png"
-       (mouseenter)="slice4 = true"
-       (mouseleave)="slice4 = false"
-       alt="" id="slice4" class="slice">
-</a>
 
-<a [routerLink] = "['/projects']">
-  <img src="./../assets/pizza/1.png"
-       (mouseenter)="slice1 = true"
-       (mouseleave)="slice1 = false"
-       alt="" id="slice1" class="slice">
-</a>
+<div id="pizza">
+  <a [routerLink] = "['/work-experience']">
+    <img src="./../assets/pizza/4.png"
+         (mouseenter)="slice4 = true"
+         (mouseleave)="slice4 = false"
+         alt="" id="slice4" class="slice">
+  </a>
 
-<a [routerLink] = "['/about']">
-  <img src="./../assets/pizza/2.png"
-       (mouseenter)="slice2 = true"
-       (mouseleave)="slice2 = false"
-       alt="" id="slice2" class="slice">
-</a>
+  <a [routerLink] = "['/projects']">
+    <img src="./../assets/pizza/1.png"
+         (mouseenter)="slice1 = true"
+         (mouseleave)="slice1 = false"
+         alt="" id="slice1" class="slice">
+  </a>
 
-
-<a [routerLink] = "['/contact']">
-  <img src="./../assets/pizza/3.png"
-       (mouseenter)="slice3 = true"
-       (mouseleave)="slice3 = false"
-       alt="" id="slice3" class="slice">
-</a>
+  <a [routerLink] = "['/about']">
+    <img src="./../assets/pizza/2.png"
+         (mouseenter)="slice2 = true"
+         (mouseleave)="slice2 = false"
+         alt="" id="slice2" class="slice">
+  </a>
 
 
+  <a [routerLink] = "['/contact']">
+    <img src="./../assets/pizza/3.png"
+         (mouseenter)="slice3 = true"
+         (mouseleave)="slice3 = false"
+         alt="" id="slice3" class="slice">
+  </a>
 
-<div id="slice1Text" *ngIf="slice1">
-  Eat this slice to learn about my projects
-</div>
 
-<div id="slice2Text" *ngIf="slice2">
-  Eat this slice to learn about ME
-</div>
 
-<div id="slice3Text" *ngIf="slice3">
-  Eat this slice to contact me
-</div>
+  <div id="slice1Text" *ngIf="slice1">
+    Eat this slice to learn about my projects
+  </div>
 
-<div id="slice4Text" *ngIf="slice4">
-  Eat this slice to know about my work experience
+  <div id="slice2Text" *ngIf="slice2">
+    Eat this slice to learn about ME
+  </div>
+
+  <div id="slice3Text" *ngIf="slice3">
+    Eat this slice to contact me
+  </div>
+
+  <div id="slice4Text" *ngIf="slice4">
+    Eat this slice to know about my work experience
+  </div>
+
 </div>

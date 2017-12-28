@@ -25,8 +25,4 @@ export class ProjectsComponent implements OnInit {
       );
   }
 
-  clickedRepo(repo){
-
-  }
-
 }

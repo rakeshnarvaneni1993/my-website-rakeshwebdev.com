@@ -53,3 +53,6 @@
 .slice:hover{
   border: 3px solid #A55806;
 }
+:host{
+  font-family: 'Roboto Mono', monospace;
+}

@@ -16,3 +16,6 @@ a{
 p{
   font-size: 18px;
 }
+:host{
+  font-family: 'Roboto Mono', monospace;
+}

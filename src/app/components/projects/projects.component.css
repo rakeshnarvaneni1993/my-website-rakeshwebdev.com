@@ -3,3 +3,6 @@
   background-color: beige;
   text-align: center;
 }
+:host{
+  font-family: 'Roboto Mono', monospace;
+}
