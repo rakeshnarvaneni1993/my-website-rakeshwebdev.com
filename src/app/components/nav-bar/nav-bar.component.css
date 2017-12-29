@@ -4,6 +4,9 @@
 :host{
   font-family: 'Roboto Mono', monospace;
 }
+.nav-link{
+  color: black;
+}
 a{
   font-weight: bolder;
 }

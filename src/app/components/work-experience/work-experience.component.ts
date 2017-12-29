@@ -335,7 +335,7 @@ export class WorkExperienceComponent implements OnInit {
   clickedAccordianToHighlightOnMap(employer){
     this.lat = employer.lat;
     this.lng = employer.long;
-    this.zoom = 5;
+    this.zoom = 6;
   }
 
 }

@@ -17,10 +17,9 @@ export class ProjectsComponent implements OnInit {
       .subscribe(
         (data) => {
           this.gitHubData = JSON.parse(data['_body']);
-          console.log(JSON.parse(data['_body']));
         },
         (err) => {
-          console.log(err);
+          alert(err);
         }
       );
   }

@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AgmCoreModule } from '@agm/core';
 import {AgmSnazzyInfoWindowModule} from "@agm/snazzy-info-window";
-
+import { ClipboardModule } from 'ngx-clipboard';
 
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
@@ -19,6 +19,7 @@ import {HttpModule} from "@angular/http";
 import {GithubService} from "./services/github.service";
 import { FooterComponent } from './components/footer/footer.component';
 import { HighlightNavbarDirective } from './directives/highlight-navbar.directive';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -38,10 +39,12 @@ import { HighlightNavbarDirective } from './directives/highlight-navbar.directiv
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpModule,
+    FormsModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyAu8WN38SsCvopdVuuRGYXpRIrhzNVlK2Q'
     }),
     AgmSnazzyInfoWindowModule,
+    ClipboardModule
   ],
   providers: [GithubService],
   bootstrap: [AppComponent]

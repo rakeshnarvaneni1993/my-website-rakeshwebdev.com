@@ -1,3 +1,12 @@
+:host{
+  font-family: 'Roboto Mono', monospace;
+}
+button{
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+  background-color: black;
+}
 .jumbotron{
   background-color: white;
 }
@@ -17,7 +26,4 @@ h1:hover{
 }
 a{
   color: black;
-}
-:host{
-  font-family: 'Roboto Mono', monospace;
 }

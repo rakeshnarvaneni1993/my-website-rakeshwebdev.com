@@ -1,58 +1,19 @@
-#slice4{
-  position: absolute;
-  margin-top: 22%;
-  margin-left: 49.5%;
-}
-
-#slice4Text{
-  position: absolute;
-  margin-left: 70%;
+.wrapper{
+  height: 50vh;
+  /*width: 100%;*/
   margin-top: 10%;
-  background-color: blueviolet;
-}
+  margin-left: 20%;
+  font-size: 24px;
+  font-weight: bolder;
 
-#slice1{
-  margin-left: 50%;
-  margin-top: 3%;
 }
-#slice1Text{
-  position: absolute;
-  margin-left: 70%;
-  margin-top: -10%;
-  background-color: aqua;
+strong{
+  /*font-weight: 600;*/
+  font-size: 30px;
 }
-#slice2{
-  position: absolute;
-  margin-left: -37.5%;
-  margin-top: 3%;
-}
-#slice2Text{
-  position: absolute;
-  margin-left: 10%;
-  margin-top: -10%;
-  background-color: purple;
+button{
+  background-color: black;
   color: white;
-}
-#slice3{
-  position: absolute;
-  margin-left: -37.5%;
-  margin-top: 22%;
-}
-#slice3Text{
-  position: absolute;
-  margin-left: 10%;
-  margin-top: 10%;
-  background-color: chartreuse;
-  color: white;
-}
-.slice{
+  margin-left: 65%;
   cursor: pointer;
-  width: 250px;
-  height: 250px;
-}
-.slice:hover{
-  border: 3px solid #A55806;
-}
-:host{
-  font-family: 'Roboto Mono', monospace;
 }
