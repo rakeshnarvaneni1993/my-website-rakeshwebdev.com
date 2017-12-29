@@ -3,13 +3,14 @@
 }
 h1{
   background-color: transparent;
-  width: 50%;
+  /*width: ;*/
   line-height: 50px;
-  transition: background-color 1s;
+  transition: background-color 3s;
 }
 h1:hover{
   background-color: black;
   color: white;
+  /*width: 50%;*/
 }
 .icons{
   margin-left: 4%;

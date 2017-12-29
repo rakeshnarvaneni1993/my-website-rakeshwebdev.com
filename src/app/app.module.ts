@@ -17,6 +17,8 @@ import { WorkExperienceComponent } from './components/work-experience/work-exper
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {HttpModule} from "@angular/http";
 import {GithubService} from "./services/github.service";
+import { FooterComponent } from './components/footer/footer.component';
+import { HighlightNavbarDirective } from './directives/highlight-navbar.directive';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import {GithubService} from "./services/github.service";
     ProjectsComponent,
     AboutMeComponent,
     ContactComponent,
-    WorkExperienceComponent
+    WorkExperienceComponent,
+    FooterComponent,
+    HighlightNavbarDirective,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,23 @@
+footer{
+  background-color: black;
+
+}
+h4{
+  text-align: center;
+  color: white;
+}
+ul{
+  margin-left: 27%;
+}
+ul li{
+  display: inline-block;
+  margin-left: 30px;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+:host{
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+}
