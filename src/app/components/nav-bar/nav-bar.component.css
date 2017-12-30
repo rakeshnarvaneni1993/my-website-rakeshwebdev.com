@@ -1,5 +1,11 @@
 .navbar-brand{
   font-family: 'Alfa Slab One', cursive;
+  /*width: 25%;*/
+}
+#logo{
+  width: 100px;
+  height: 60px;
+
 }
 :host{
   font-family: 'Roboto Mono', monospace;

@@ -11,6 +11,9 @@ strong{
   /*font-weight: 600;*/
   font-size: 30px;
 }
+.row{
+  margin-left: 60%;
+}
 button{
   background-color: black;
   color: white;
