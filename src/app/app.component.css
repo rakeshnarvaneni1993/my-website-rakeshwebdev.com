@@ -3,3 +3,7 @@
     display: none;
   }
 }
+
+:host{
+  font-family: 'Roboto Mono', monospace;
+}

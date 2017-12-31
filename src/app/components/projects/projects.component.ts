@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component,OnInit,ViewChild} from '@angular/core';
 import {GithubService} from "../../services/github.service";
 
 @Component({
@@ -10,9 +10,12 @@ export class ProjectsComponent implements OnInit {
 
   gitHubData;
 
+  @ViewChild('clickButton') clickButton;
+
   constructor(private gitHub: GithubService) { }
 
   ngOnInit() {
+    this.clickButton.nativeElement.click();
     this.gitHub.getListOfRepositories()
       .subscribe(
         (data) => {
